@@ -1,0 +1,37 @@
+{
+  "name": "liftbot",
+  "version": "0.0.1",
+  "description": "a twitter bot for broken and repaired lifts",
+  "main": "liftbot.js",
+  "scripts": {
+    "start": "node liftbot.js"
+  },
+  "author": "Sebastian Vollnhals <sv@dsst.io> (https://dsst.io/)",
+  "license": "Unlicense",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "ws": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yetzt/liftbot.git"
+  },
+  "keywords": [
+    "db",
+    "bahn",
+    "deutsche",
+    "bahn",
+    "aufzug",
+    "aufzüge",
+    "adam",
+    "lifts",
+    "escalators",
+    "brokenlifts",
+    "bot",
+    "twitter"
+  ],
+  "bugs": {
+    "url": "https://github.com/yetzt/liftbot/issues"
+  },
+  "homepage": "https://github.com/yetzt/liftbot#readme"
+}
