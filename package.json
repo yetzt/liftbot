@@ -1,6 +1,6 @@
 {
   "name": "liftbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a twitter bot for broken and repaired lifts",
   "main": "liftbot.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "license": "Unlicense",
   "dependencies": {
     "debug": "^2.2.0",
+    "twitter": "^1.2.5",
     "ws": "^1.0.1"
   },
   "repository": {
