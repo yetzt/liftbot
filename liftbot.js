@@ -9,6 +9,7 @@ var debug = require("debug")("liftbot");
 var ws = require("ws");
 var twitter = require("twitter");
 var request = require("request");
+var moment = require("moment");
 
 // check for config file
 if (!fs.existsSync(path.resolve(__dirname, "config.js"))) console.error("config.js not found") || process.exit(1);
@@ -89,6 +90,10 @@ new ws(config.websocket).on("open", function(){
 		default: return; break;
 	}
 	
+	// add time to circumvent twitters repost protection
+	message.push("("+moment(data.timestamp).format("HH:mm")+")");
+	
+	// compile message
 	message = message.join(" ");
 	debug("posting: %s", message);
 	
